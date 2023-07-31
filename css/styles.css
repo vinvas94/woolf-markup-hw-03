@@ -69,8 +69,7 @@ body {
 /* ==========--------HEADER================== */
 
 .page-header {
-  padding-bottom: 24px;
-  padding-top: 24px;
+  border-bottom: 1px solid var(--border-cards);
 }
 
 .page-header-container {
@@ -88,6 +87,7 @@ body {
   display: flex;
   align-items: center;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .header-link {
@@ -161,6 +161,7 @@ body {
   background-color: var(--primary-brand);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   padding: 16px 32px;
+  min-width: 169px;
 }
 
 .hero-btn:hover,
@@ -176,7 +177,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--white-background);
-  width: 496px;
+  max-width: 496px;
   margin-bottom: 48px;
 }
 
@@ -202,7 +203,12 @@ body {
 
 .work-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.work-cards {
+  width: calc((100% - 72px) / 4);
 }
 
 /* ====================/SECTION WORK ====================== */
@@ -211,12 +217,14 @@ body {
 .section-doing {
   padding-bottom: 120px;
 }
+.heading-doing {
+  margin-bottom: 72px;
+}
 
 .processing-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  margin-top: 72px;
 }
 /* ====================/What are we doing ====================== */
 
@@ -226,11 +234,14 @@ body {
   padding-bottom: 120px;
   background-color: var(--light-background-color);
 }
+
+.heading-team {
+  margin-bottom: 72px;
+}
 .team-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  margin-top: 72px;
 }
 
 .team-cards {
@@ -260,7 +271,7 @@ body {
   margin-top: 8px;
 }
 .team-text {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 
 /* ================== /Our TEAM===================== */
@@ -272,9 +283,9 @@ body {
   padding-top: 100px;
 }
 
-.footer-container {
-  padding-bottom: 100px;
-  padding-top: 100px;
+.link-footer {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-description {
@@ -284,7 +295,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--light-background-color);
   max-width: 264px;
-  margin-top: 16px;
 }
 
 .accent-logo-footer {
@@ -310,6 +320,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark-color);
+  margin-bottom: 8px;
 }
 
 .section-description {
@@ -318,7 +329,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--body-text-color);
-  margin-top: 8px;
 }
 /* ================= /COMPONENTS================= */
 
@@ -357,6 +367,7 @@ body {
 .btn-page:focus {
   color: var(--white-background);
   background: var(--pressed-state);
+  border: 1px solid transparent;
 }
 
 .portfolio-cards {
@@ -370,7 +381,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  flex-basis: calc((100% - 24px) / 3);
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 .portfolio-text-cards {
