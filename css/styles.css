@@ -87,6 +87,9 @@ body {
   display: flex;
   align-items: center;
   gap: 40px;
+}
+
+.header-item {
   padding: 24px 0;
 }
 
@@ -205,6 +208,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 24px;
 }
 
 .work-cards {
@@ -260,6 +264,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--dark-color);
   text-align: center;
+  margin-bottom: 8px;
 }
 .team-description {
   font-family: var(--primary-font);
@@ -268,7 +273,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--body-text-color);
   text-align: center;
-  margin-top: 8px;
 }
 .team-text {
   padding: 32px 0;
@@ -371,21 +375,20 @@ body {
 }
 
 .portfolio-cards {
-  margin-bottom: 48px;
+  flex-basis: calc((100% - 48px) / 3);
 }
 
-.not-margin {
-  margin-bottom: 0;
-}
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
   justify-content: space-between;
-  flex-basis: calc((100% - 48px) / 3);
 }
 
 .portfolio-text-cards {
   padding: 32px 16px;
+  border-top: none;
   border: 1px solid var(--border-cards);
 }
 .portfolio-subheadings {
@@ -395,6 +398,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark-color);
+  margin-bottom: 8px;
 }
 
 .portfolio-description {
@@ -403,7 +407,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--body-text-color);
-  margin-top: 8px;
 }
 
 /* ===================PORTFOLIO=============== */
